@@ -8,6 +8,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        ControladorDNI controlador = new ControladorDNI();
+        
+       
+        boolean esvalido = controlador.esValido("23456788T");
+        System.out.println("23456788T --> " + esvalido);
     }
 }
